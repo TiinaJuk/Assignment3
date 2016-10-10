@@ -1,3 +1,5 @@
+package dit948;
+
 /**
  * This is a subclass of Circuit implementing the negation of a Circuit
  */

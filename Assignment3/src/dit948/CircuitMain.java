@@ -1,3 +1,5 @@
+package dit948;
+
 import static dit948.SimpleIO.*;
 import static dit948.Random.*;
 

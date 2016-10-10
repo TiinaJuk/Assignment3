@@ -1,4 +1,6 @@
-/**
+package dit948;
+
+/*
  * This is a subclass of Circuit implementing Variable in a Circuit
  * 
  */

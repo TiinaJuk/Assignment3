@@ -1,3 +1,5 @@
+package dit948;
+
 /*
  * This is a subclass of Circuit implementing the conjunction of a left Circuit
  * and a right Circuit
