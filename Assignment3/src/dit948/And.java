@@ -3,6 +3,7 @@
  * and a right Circuit
  */
 
+//Checking where it saves these
 public class And extends Circuit {
 
 	// Private instance variables,
