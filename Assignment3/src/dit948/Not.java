@@ -22,7 +22,7 @@ public class Not extends Circuit {
 	 */
 
 	public String toString() {
-		// Code here
+		return null; //testing
 	}
 
 	/**
@@ -30,7 +30,7 @@ public class Not extends Circuit {
 	 */
 
 	public boolean isTrueIn(Assignment assignment) {
-		// code here
+		return true; //testing
 	}
 
 	/**
@@ -40,6 +40,6 @@ public class Not extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		// code here
+		return null; // testing
 	}
 }

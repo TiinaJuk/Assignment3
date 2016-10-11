@@ -1,29 +1,32 @@
 package dit948;
 
+import static dit948.Random.randomInt;
+
 /*
  * This is a subclass of Circuit implementing Variable in a Circuit
  * 
  */
 
 public class Variable extends Circuit {
-
 	// Private instance variable,
-	// name, a String representing a variable
-
-	// code here
+	// name, a String representing a variable	
+	private String name;
+	
 
 	// Constructor with parameters
 
 	public Variable(String name) {
-		// code here
+		this.name = name;	
 	}
+
+
 
 	/**
 	 * String representation of a variable of a circuit
 	 */
 
 	public String toString() {
-		// code here
+		return null; // testing
 	}
 
 	/**
@@ -31,7 +34,7 @@ public class Variable extends Circuit {
 	 */
 
 	public String getName() {
-		// code here
+		return name;
 	}
 	
 	/**
@@ -39,7 +42,7 @@ public class Variable extends Circuit {
 	 */
 
 	public boolean isTrueIn(Assignment assignment) {
-		// code here
+		return true; // testing
 	}
 
 	/**
@@ -47,6 +50,7 @@ public class Variable extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		// code here
+		return null; //testing
 	}
+
 }

@@ -8,16 +8,19 @@ package dit948;
 
 public class Or extends Circuit {
 
+	
 	// Private instance variables,
 	// left, the left Circuit
 	// right, the right Circuit
 
-	// code here
+	private Circuit left;
+	private Circuit right;
 
 	// Constructor with parameters
 
 	public Or(Circuit left, Circuit right) {
-		// code here
+		this.left = left;
+		this.right = right;
 	}
 
 	/**
@@ -26,7 +29,8 @@ public class Or extends Circuit {
 	 */
 
 	public String toString() {
-		// code here
+		// String circuit = left + "\/" + right;
+	return null; //testing
 	}
 
 	/**
@@ -35,7 +39,7 @@ public class Or extends Circuit {
 	 */
 
 	public boolean isTrueIn(Assignment assignment) {
-		// code here
+		return true; // testing
 	}
 
 	/**
@@ -45,7 +49,7 @@ public class Or extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		// code here
+		return null; // testing
 	}
 
 }

@@ -7,17 +7,19 @@ package dit948;
 
 //Checking where it saves these
 public class And extends Circuit {
-
+		
 	// Private instance variables,
 	// left, the left Circuit
 	// right, the right Circuit
-
-	// code here
-
+	Variable variable;
+	
+	private Circuit left = new Circuit();
+	private Circuit right = new Circuit();
+	
 	// Constructor with parameters
-
-	public And(Circuit left, Circuit right) {
-		// code here
+	public And(Circuit left, Circuit right) {	
+		this.left = left;
+		this.right = right;
 	}
 
 	/**
@@ -26,16 +28,17 @@ public class And extends Circuit {
 	 */
 
 	public String toString() {
-		// code here
+		//String circuit = left + "/\" + right;
+		return null; //testing
 	}
 
-	/**
+	/*
 	 * Returns true if the conjunction of the left circuit and the right circuit
 	 * is true in the assignment
 	 */
 
 	public boolean isTrueIn(Assignment assignment) {
-		// code here
+		return true; // testing
 	}
 
 	/**
@@ -45,7 +48,7 @@ public class And extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		// code here
+		return null; // testing
 	}
 
 }

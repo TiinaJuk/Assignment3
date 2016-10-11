@@ -1,7 +1,7 @@
 package dit948;
 
-import static dit948.SimpleIO.;
-import static dit948.Random.;
+import static dit948.SimpleIO.*;
+import static dit948.Random.*;
 
 public  class Circuit {
 
