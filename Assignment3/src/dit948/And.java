@@ -5,7 +5,6 @@ package dit948;
  * and a right Circuit
  */
 
-//testing
 //Checking where it saves these
 public class And extends Circuit {
 		
@@ -30,7 +29,7 @@ public class And extends Circuit {
 	 */
 	
 	public String toString() {
-		String circuit = "(" + left + "AND" + right + ")";
+		String circuit = "(" + left + "/\\" + right + ")";
 		return circuit;
 	}
 

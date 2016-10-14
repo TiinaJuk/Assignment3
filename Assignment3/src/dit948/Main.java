@@ -134,12 +134,13 @@ public class Main {
 		int number = readInt();
 		
 		
-		int depht = 1 + (randomInt(5)); 
+		
 		String circuitList = "";
 		
 		int inc =1;
 		
 		for(int i = 0; i < number; i++){
+		int depht = 1 + (randomInt(5)); 
 		circuit = Circuit.mkRandom(depht, allVariables);
 		print(circuit); // why does it not print an adress if we are prining an object?
 		print(":");
@@ -149,7 +150,7 @@ public class Main {
 		inc++;
 		}
 		circuitString[1] = circuitList;
-		AssWindow.main(circuitString);
+		AssignWindow.main(circuitString);
 		
 	}
 

@@ -30,7 +30,7 @@ public class Or extends Circuit {
 	 */
 
 	public String toString() {
-		return left + "OR" + right;
+		return left + "\\/" + right;
 	}
 
 	/**
