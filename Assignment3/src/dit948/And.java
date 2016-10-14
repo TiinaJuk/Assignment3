@@ -5,6 +5,7 @@ package dit948;
  * and a right Circuit
  */
 
+//testing
 //Checking where it saves these
 public class And extends Circuit {
 		
