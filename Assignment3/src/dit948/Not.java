@@ -8,8 +8,8 @@ public class Not extends Circuit {
 
 	// Private instance variable,
 	// negated, a Circuit to be negated
-	Variable variable;
-	Circuit circuit;
+	
+	
 	private Circuit negated;
 
 	// Constructor with parameters
@@ -42,7 +42,7 @@ public class Not extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		return circuit.freeVariables();
+		return negated.freeVariables();
 		
 	}
 }

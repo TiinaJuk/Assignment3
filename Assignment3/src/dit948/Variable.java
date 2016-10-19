@@ -11,7 +11,7 @@ public class Variable extends Circuit {
 	// Private instance variable,
 	// name, a String representing a variable	
 	private String name;
-	Circuit circuit;
+
 	
 
 	// Constructor with parameters
@@ -57,8 +57,8 @@ public class Variable extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		Variable[] free = circuit.freeVariables();
-		return free; 		
+		
+		return new Variable []{this}; 		
 	}
 
 }
