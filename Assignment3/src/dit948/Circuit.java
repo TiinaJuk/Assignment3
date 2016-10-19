@@ -1,6 +1,7 @@
+package dit948;
 
-import static dit948.SimpleIO.;
-import static dit948.Random.;
+import static dit948.SimpleIO.*;
+import static dit948.Random.*;
 
 public  class Circuit {
 
@@ -47,6 +48,7 @@ public  class Circuit {
 	 * @param assignment the assignment
 	 * @return false
 	 */
+	
 
 	public  boolean isTrueIn(Assignment assignment){
 		return false;
@@ -63,7 +65,7 @@ public  class Circuit {
 	}
 
 	/**
-	 * Returns true iff other is logically equivalent to this circuit.
+	 * Returns true if other is logically equivalent to this circuit.
 	 */
 
 	public boolean equals(Object other) {

@@ -1,3 +1,5 @@
+package dit948;
+
 /**
  * This is a subclass of Circuit implementing the disjunction of a left Circuit
  * and a right Circuit
@@ -6,16 +8,20 @@
 
 public class Or extends Circuit {
 
+	
 	// Private instance variables,
 	// left, the left Circuit
 	// right, the right Circuit
+	Circuit circuit = new Circuit();
 
-	// code here
+	private Circuit left;
+	private Circuit right;
 
 	// Constructor with parameters
 
 	public Or(Circuit left, Circuit right) {
-		// code here
+		this.left = left;
+		this.right = right;
 	}
 
 	/**
@@ -24,7 +30,7 @@ public class Or extends Circuit {
 	 */
 
 	public String toString() {
-		// code here
+		return left + "\\/" + right;
 	}
 
 	/**
@@ -33,7 +39,20 @@ public class Or extends Circuit {
 	 */
 
 	public boolean isTrueIn(Assignment assignment) {
-		// code here
+		boolean leftBo = left.isTrueIn(assignment);
+		boolean rightBo = right.isTrueIn(assignment);
+		
+		boolean result = true;
+		
+		if ((leftBo == false) && (rightBo == false)){
+			result = false;	
+		}
+		
+		else {
+			result = true;	
+		}
+		
+		return result;					
 	}
 
 	/**
@@ -43,7 +62,7 @@ public class Or extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		// code here
+		return circuit.freeVariables();
 	}
 
 }

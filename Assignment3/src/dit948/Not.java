@@ -1,3 +1,5 @@
+package dit948;
+
 /**
  * This is a subclass of Circuit implementing the negation of a Circuit
  */
@@ -6,13 +8,14 @@ public class Not extends Circuit {
 
 	// Private instance variable,
 	// negated, a Circuit to be negated
-
-	// code here
+	Variable variable;
+	Circuit circuit;
+	private Circuit negated;
 
 	// Constructor with parameters
 
 	public Not(Circuit negated) {
-		// code here
+		this.negated = negated;
 	}
 
 	/**
@@ -20,7 +23,7 @@ public class Not extends Circuit {
 	 */
 
 	public String toString() {
-		// Code here
+		return "!(" + negated + ")";
 	}
 
 	/**
@@ -28,7 +31,8 @@ public class Not extends Circuit {
 	 */
 
 	public boolean isTrueIn(Assignment assignment) {
-		// code here
+		return !(negated.isTrueIn(assignment));
+		
 	}
 
 	/**
@@ -38,6 +42,7 @@ public class Not extends Circuit {
 	 */
 
 	public Variable[] freeVariables() {
-		// code here
+		return circuit.freeVariables();
+		
 	}
 }

@@ -1,3 +1,5 @@
+package dit948;
+
 /**
  * An assignment determines what variables are true and what variables are false
  * This is done by using an array of true variables. The variables not present in 
